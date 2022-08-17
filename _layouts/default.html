@@ -150,21 +150,29 @@ input:checked + .slider::before {
             <div class="slider round"></div>
           </label>
         </div>
-        <a id="a-title">
-			<h1>The Hitchhiker’s Guide to Online Anonymity</h1>
-        </a>
-        <h2>How I learned to start worrying and love <del>privacy</del> anonymity</h2>
-		<h4 class="project-version">The latest Version is v1.1.6-pre1 See the <a href="{{ site.github.changelog_url }}" style="color:#ff4700">changelog.</a></h4>
         <section id="downloads">
+			{% if page.url = "/" %}
+			        <a id="a-title">
+					<h1>Welcome to Anonymous Planet</h1>
+        			</a>
+        			<h2>Home of The Hitchhiker’s Guide to Online Anonymity and Privacy Security Anonymity projects</h2>
+		        {% endif %}
 			{% if page.url != "/" %}
 				<a href="{{ site.github.home_url }}" class="btn_small">Home</a>
+				<a id="a-title">
+					<h1>The Hitchhiker’s Guide to Online Anonymity</h1>
+        			</a>
+        			<h2>How I learned to start worrying and love <del>privacy</del> anonymity</h2>
+				<h4 class="project-version">The latest Version is v1.1.6-pre1 See the <a href="{{ site.github.changelog_url }}" style="color:#ff4700">changelog.</a></h4>
 			{% endif %}
 			{% if page.url != "/guide.html" %}
 				<a href="{{ site.github.guide_url }}" class="btn_small" style="color:#FF0000">View Online</a>
 			{% endif %}
-<!--				<a href="{{ site.github.pdf_url }}" class="btn_small">PDF</a>-->
+			{% if page.url = "/guide.html" %}
+                                <!--<a href="{{ site.github.pdf_url }}" class="btn_small">PDF</a>-->
 				<!--<a href="{{ site.github.pdf_dark_url }}" class="btn_small">PDF (Dark)</a>-->
-<!--				<a href="{{ site.github.odt_url }}" class="btn_small">OpenDocument</a>-->
+				<!--<a href="{{ site.github.odt_url }}" class="btn_small">OpenDocument</a>-->
+			{% endif %}
 			{% if page.url != "/donations.html" %}
 				<a href="{{ site.github.donations_url }}" class="btn_small">Donate</a>
 			{% endif %}
