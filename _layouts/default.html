@@ -152,41 +152,32 @@ input:checked + .slider::before {
         </div>
         <section id="downloads">
 			{% if page.url == "/" %}
-			        <a id="a-title">
-					<h1>Welcome to Anonymous Planet</h1>
-        			</a>
-        			<h2>Home of The Hitchhiker’s Guide to Online Anonymity and Privacy Security Anonymity projects</h2>
-		        {% endif %}
-			{% if page.url != "/" %}
-				<a href="{{ site.github.home_url }}" class="btn_small">Home</a>
-				<a id="a-title">
-					<h1>The Hitchhiker’s Guide to Online Anonymity</h1>
-        			</a>
-        			<h2>How I learned to start worrying and love <del>privacy</del> anonymity</h2>
-				<h4 class="project-version">The latest Version is v1.1.6-pre1 See the <a href="{{ site.github.changelog_url }}" style="color:#ff4700">changelog.</a></h4>
-			{% endif %}
-			{% if page.url != "/guide.html" %}
-				<a href="{{ site.github.guide_url }}" class="btn_small" style="color:#FF0000">View Online</a>
+				<a id="a-title"><h1>Welcome to the Anonymous Planet initiative</h1></a>
+				<h2>Home of The Hitchhiker’s Guide to Online Anonymity and PSA projects</h2>
 			{% endif %}
 			{% if page.url == "/guide.html" %}
-                                <!--<a href="{{ site.github.pdf_url }}" class="btn_small">PDF</a>-->
-				<!--<a href="{{ site.github.pdf_dark_url }}" class="btn_small">PDF (Dark)</a>-->
-				<!--<a href="{{ site.github.odt_url }}" class="btn_small">OpenDocument</a>-->
+				<a id="a-title"><h1>The Hitchhiker’s Guide to Online Anonymity</h1></a>
+				<h2>How I learned to start worrying and love <del>privacy</del> anonymity</h2>
+				<h4 class="project-version">The latest Version is v1.1.6pre1 See the <a href="{{ site.github.changelog_url }}" style="color:#ff4700">changelog.</a></h4>
+				<!--<a href="{{ site.github.pdf_url }}" class="btn_small">Download PDF</a>-->
+				<a href="{{ site.github.home_url }}" class="btn_small">Anonymous Planet Home</a>
+				<a href="{{ site.github.repository_url }}" target="_blank" class="btn_small">Repository</a>
+			{% endif %}
+			{% if page.url != "/guide.html" %}
+				<a href="{{ site.github.guide_url }}" class="btn_small" style="color:#FF0000">View Guide Online</a>
 			{% endif %}
 			{% if page.url != "/donations.html" %}
 				<a href="{{ site.github.donations_url }}" class="btn_small">Donate</a>
 			{% endif %}
-				<a href="{{ site.github.repository_url }}" target="_blank" class="btn_small">Repository</a>
-				<!--<a href="{{ site.github.keyoxide_url }}" target="_blank" class="btn_small">Keyoxide</a>-->
-				<a rel="me" href="{{ site.github.twitter_url }}" target="_blank" class="btn_small">Twitter</a>
-				<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small">Mastodon</a>
-				<!--<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small">Mastodon</a>-->
 			{% if page.url != "/links.html" %}
 				<a href="{{ site.github.links_url }}" class="btn_small">Links</a>
 			{% endif %}
 			{% if page.url != "/about.html" %}
 				<a href="{{ site.github.about_url }}" class="btn_small">About</a>
 			{% endif %}
+				<!--<a href="{{ site.github.keyoxide_url }}" target="_blank" class="btn_small">Keyoxide</a>-->
+				<a rel="me" href="{{ site.github.twitter_url }}" target="_blank" class="btn_small btn-twitter"><span class="icon"></span></a>
+				<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small btn-mastodon"><span class="icon"></span></a>
         </section>
 		<h5>GPG Key Fingerprint: 7DFF D747 1FB7 6E2A 8ABB  BCDD D769 B374 9E93 3B8A / Minisign public key: <a href="{{ site.github.minisign_url }}" style="color:#ff4700">minisign.pub</a></h5>
 		<noscript><p class="jswarning">JavaScript is required to toggle light mode. JavaScript is not used for any other purpose.</p></noscript>
