@@ -70,6 +70,34 @@ a {
   border-radius: 25px;
 }
 
+.btn .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 0px 0 0;
+  float: center;
+}
+
+.btn-twitter .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 0px 0 0;
+  float: center;
+  opacity: 0.6;
+  background: url("../images/twitter.png") 0 0 no-repeat;
+}
+
+.btn-mastodon .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 0px 0 0;
+  float: center;
+  opacity: 0.6;
+  background: url("../images/mastodon.png") 0 0 no-repeat;
+}
+
 .btn:hover {
   background: -webkit-linear-gradient(top, rgba(40,40,40,0.4), rgba(35,35,35,0.4) 50%, rgba(10,10,10,0.4) 50%, rgba(0,0,0,0.4));
 }
